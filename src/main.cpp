@@ -11,6 +11,10 @@
 I2C i2c(PF_0, PF_1);
 Adafruit_BNO055 bno = Adafruit_BNO055(-1, BNO055_ADDRESS_A, &i2c);
 
+DigitalOut LED_BOARD_1(PG_13);
+DigitalOut LED_BOARD_2(PG_14);
+DigitalIn button(PA_0); // Configure P1_14 pin as input
+
 Timer t;
 Ticker t2;
 float oldRead;
@@ -18,6 +22,28 @@ float currY;
 int alertCounter;
 int printStuff = 0;
 void loop();
+
+void alert(){
+  bool read_button = 0;
+
+  while(!read_button){
+    //LED Pattern
+    printf("Alert! Hold Button to reset!\n");
+    LED_BOARD_1 = 1;
+    thread_sleep_for(100);
+    LED_BOARD_1 = 0;
+    LED_BOARD_2 = 1;
+    thread_sleep_for(100);
+    LED_BOARD_1 = 1;
+    //
+
+    read_button = button.read();
+    thread_sleep_for(250);
+    LED_BOARD_1 = 0;
+    LED_BOARD_2 = 0;
+  }
+
+}
 
 void processor(){
   if(abs(oldRead - currY) < 0.8)
@@ -27,6 +53,7 @@ void processor(){
     {
       printStuff = 1;
       alertCounter = 0;
+
     }
   }
   else
@@ -37,13 +64,19 @@ void processor(){
   oldRead = currY;
 }
 
-/**************************************************************************/
-/*
-    Arduino setup function (automatically called at startup)
-*/
-/**************************************************************************/
+
+
+
 int main()
 {
+  bool read_button = 0;
+
+  while(!read_button){
+    printf("Press Button to begin.\n");
+    read_button = button.read();
+    thread_sleep_for(250);
+  }
+
   oldRead =0;
   currY = 0;
   alertCounter = 0;
@@ -64,13 +97,14 @@ int main()
 
   /* Display the current temperature */
   int8_t temp = bno.getTemp();
-  printf("Current Temperature: %d C\r\n", temp);
+  // printf("Current Temperature: %d C\r\n", temp);
   bno.setExtCrystalUse(true);
 
-  printf("Calibration status values: 0=uncalibrated, 3=fully calibrated\r\n");
+  // printf("Calibration status values: 0=uncalibrated, 3=fully calibrated\r\n");
   
-  while(true)
+  while(true){
       loop();
+  }
 }
 /**************************************************************************/
 /*
@@ -101,6 +135,9 @@ void loop()
     printf("\tOldRead observed: %f\n", oldRead);
     printf("\n");
     printStuff =0;
+    t2.detach();
+    alert();
+    t2.attach(&processor, 1s);
   }
 
   // currY = euler.y();
