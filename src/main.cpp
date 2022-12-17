@@ -21,11 +21,14 @@ char display_buf[5][60];
 I2C i2c(PB_11, PB_10);
 Adafruit_BNO055 bno = Adafruit_BNO055(-1, BNO055_ADDRESS_A, &i2c);
 
+// Board LED'S
 DigitalOut LED_BOARD_1(PG_13);
 DigitalOut LED_BOARD_2(PG_14);
 DigitalIn button(PA_0); // Configure P1_14 pin as input
 
-Timer t;
+//Piezo Buzzer
+PwmOut buzzer(PB_0);
+
 Ticker t2;
 float oldReadTotal;
 float oldReadX;
@@ -47,6 +50,8 @@ void alert(){
   lcd.SelectLayer(FOREGROUND);
   lcd.SetBackColor(LCD_COLOR_RED);
   snprintf(display_buf[3],60,"WARNING!!!");
+  buzzer.period(.1f);
+  buzzer.write(.1f);
 
   for(int i=2;i<=17;i++){
   lcd.DisplayStringAt(0, LINE(i), (uint8_t *)display_buf[3], CENTER_MODE);
@@ -72,21 +77,22 @@ void alert(){
   lcd.Clear(LCD_COLOR_WHITE);
   lcd.SelectLayer(FOREGROUND);
   lcd.SetBackColor(LCD_COLOR_WHITE);
+  buzzer = 0.0f;
 }
 
 void processor(){
   oldReadTotal = oldReadX+oldReadY+oldReadZ;
-  if(!(abs(oldReadTotal - currY-currX-currZ) < 0.55) && first){
+  if(!(abs(oldReadTotal - currY-currX-currZ) < 0.65) && first){
       buff++;
     }
-  if(abs(oldReadTotal - currY-currX-currZ) < 0.55 || (buff != 0 && buff < 3))
+  if(abs(oldReadTotal - currY-currX-currZ) < 0.65 || (buff != 0 && buff < 7))
   {
     if(alertCounter == 0){
       first = 1;
     } 
     alertCounter++;
 
-    if(alertCounter == 10)
+    if(alertCounter == 20)
     {
       printStuff = 1;
       alertCounter = 0;
@@ -129,8 +135,9 @@ int main()
   currY = 0;
   currZ = 0;
   alertCounter = 0;
-  // pc.baud(9600);
-  t2.attach(&processor, 1s);
+
+  //Ticker to checl difference in acceleration runs every 0.5s
+  t2.attach(&processor, 500ms);
   printf("Orientation Sensor Raw Data Test\r\n");
   /* Initialise the sensor */
   if(!bno.begin())
