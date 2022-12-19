@@ -1,0 +1,23 @@
+{
+    "authors": {
+        "name": "Ben, Simon, Inez IDD",
+        "url": "https://os.mbed.com/teams/Ben-Simon-Inez-IDD/"
+    },
+    "build": {
+        "builder": "MbedLibBuilder"
+    },
+    "description": "Adafruit driver converted to mbed.",
+    "examples": [
+        "https://os.mbed.com/teams/Ben-Simon-Inez-IDD/code/BNO055_Adafruit/",
+        "https://os.mbed.com/users/abraha2d/code/SpriteIMU/"
+    ],
+    "frameworks": "mbed",
+    "keywords": [],
+    "name": "Adafruit_BNO055",
+    "platforms": "*",
+    "repository": {
+        "type": "hg",
+        "url": "https://os.mbed.com/teams/Ben-Simon-Inez-IDD/code/Adafruit_BNO055/"
+    },
+    "version": "0.0.0+sha.8092160b6a59"
+}

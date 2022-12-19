@@ -1,0 +1,26 @@
+.pio/build/disco_f429zi/FrameworkMbedconnectivity/lorawan/lorastack/mac/LoRaMacCrypto.o: \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/lorawan/lorastack/mac/LoRaMacCrypto.cpp \
+ .pio/build/disco_f429zi/mbed_config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/lorawan/lorastack/mac/LoRaMacCrypto.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/aes.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/platform/inc/platform_mbed.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/check_config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/cmac.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/cipher.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform_util.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/lorawan/system/lorawan_data_structures.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/lorawan/include/lorawan/lorawan_types.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/Callback.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_cstddef \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_new \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_assert.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_toolchain.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_preprocessor.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_type_traits \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_functional \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_memory \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_utility \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_iterator \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform_time.h

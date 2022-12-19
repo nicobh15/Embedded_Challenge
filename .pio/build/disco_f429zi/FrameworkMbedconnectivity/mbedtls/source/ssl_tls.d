@@ -1,0 +1,31 @@
+.pio/build/disco_f429zi/FrameworkMbedconnectivity/mbedtls/source/ssl_tls.o: \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/source/ssl_tls.c \
+ .pio/build/disco_f429zi/mbed_config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/common.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/platform/inc/platform_mbed.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/check_config.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform_time.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ssl.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/bignum.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ecp.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ssl_ciphersuites.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/pk.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/md.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/rsa.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ecdsa.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/cipher.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/platform_util.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/x509_crt.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/x509.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/asn1.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/x509_crl.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ecdh.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/ssl_internal.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/sha256.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/sha512.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/debug.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/error.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/version.h \
+ /Users/nico/.platformio/packages/framework-mbed/connectivity/mbedtls/include/mbedtls/oid.h

@@ -1,0 +1,19 @@
+.pio/build/disco_f429zi/FrameworkMbedstorage/blockdevice/source/SFDP.o: \
+ /Users/nico/.platformio/packages/framework-mbed/storage/blockdevice/source/SFDP.cpp \
+ .pio/build/disco_f429zi/mbed_config.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_error.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_retarget.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_toolchain.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_preprocessor.h \
+ /Users/nico/.platformio/packages/framework-mbed/storage/blockdevice/include/blockdevice/internal/SFDP.h \
+ /Users/nico/.platformio/packages/framework-mbed/storage/blockdevice/include/blockdevice/BlockDevice.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/Callback.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_cstddef \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_new \
+ /Users/nico/.platformio/packages/framework-mbed/platform/include/platform/mbed_assert.h \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_type_traits \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_functional \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_memory \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_utility \
+ /Users/nico/.platformio/packages/framework-mbed/platform/cxxsupport/mstd_iterator \
+ /Users/nico/.platformio/packages/framework-mbed/platform/mbed-trace/include/mbed-trace/mbed_trace.h
