@@ -1,0 +1,110 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/include",
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/src",
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/libdeps/disco_f429zi/Adafruit_BNO055",
+                "/Users/nico/.platformio/packages/framework-mbed",
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/build/disco_f429zi",
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/libdeps/disco_f429zi/Unity/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/include",
+                    "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/src",
+                    "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/libdeps/disco_f429zi/Adafruit_BNO055",
+                    "/Users/nico/.platformio/packages/framework-mbed",
+                    "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/build/disco_f429zi",
+                    "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/libdeps/disco_f429zi/Unity/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60105",
+                "STM32F4",
+                "STM32F429xx",
+                "ARM_MATH_CM4",
+                "COMPONENT_FLASHIAP=1",
+                "DEVICE_ANALOGIN=1",
+                "DEVICE_ANALOGOUT=1",
+                "DEVICE_CAN=1",
+                "DEVICE_FLASH=1",
+                "DEVICE_I2C=1",
+                "DEVICE_I2CSLAVE=1",
+                "DEVICE_I2C_ASYNCH=1",
+                "DEVICE_INTERRUPTIN=1",
+                "DEVICE_MPU=1",
+                "DEVICE_PORTIN=1",
+                "DEVICE_PORTINOUT=1",
+                "DEVICE_PORTOUT=1",
+                "DEVICE_PWMOUT=1",
+                "DEVICE_RESET_REASON=1",
+                "DEVICE_RTC=1",
+                "DEVICE_SERIAL=1",
+                "DEVICE_SERIAL_ASYNCH=1",
+                "DEVICE_SERIAL_FC=1",
+                "DEVICE_SLEEP=1",
+                "DEVICE_SPI=1",
+                "DEVICE_SPISLAVE=1",
+                "DEVICE_SPI_ASYNCH=1",
+                "DEVICE_STDIO_MESSAGES=1",
+                "DEVICE_TRNG=1",
+                "DEVICE_USTICKER=1",
+                "DEVICE_WATCHDOG=1",
+                "TARGET_CORTEX",
+                "TARGET_CORTEX_M",
+                "TARGET_DISCO_F429ZI",
+                "TARGET_LIKE_CORTEX_M4",
+                "TARGET_LIKE_MBED",
+                "TARGET_M4",
+                "TARGET_MCU_STM32",
+                "TARGET_MCU_STM32F4",
+                "TARGET_MCU_STM32F429xI",
+                "TARGET_NAME=DISCO_F429ZI",
+                "TARGET_RELEASE",
+                "TARGET_RTOS_M4_M7",
+                "TARGET_STM",
+                "TARGET_STM32F4",
+                "TARGET_STM32F429xI",
+                "TOOLCHAIN_GCC",
+                "TOOLCHAIN_GCC_ARM",
+                "TRANSACTION_QUEUE_SIZE_SPI=2",
+                "USE_FULL_LL_DRIVER",
+                "USE_HAL_DRIVER",
+                "__CMSIS_RTOS",
+                "__CORTEX_M4",
+                "__FPU_PRESENT=1",
+                "__MBED_CMSIS_RTOS_CM",
+                "__MBED__=1",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "forcedInclude": [
+                "/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/build/disco_f429zi/mbed_config.h",
+                ""
+            ],
+            "compilerPath": "/Users/nico/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m4",
+                "-mfloat-abi=softfp",
+                "-mfpu=fpv4-sp-d16",
+                "-mthumb",
+                "-iprefix",
+                "/Users/nico/.platformio/packages/framework-mbed",
+                "@/Users/nico/Documents/PlatformIO/Projects/Embedded_Challenge/.pio/build/disco_f429zi/longinc-49b6ffeda5d62fa383888267bbd0ee56",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
